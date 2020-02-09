@@ -7,13 +7,13 @@ import org.apache.http.client.methods.HttpRequestBase;
 import java.time.Clock;
 import java.util.concurrent.Callable;
 
-public class Task implements Callable<String> {
+public class NatasTask implements Callable<String> {
 
     private final HttpClient httpClient;
     private final HttpRequestBase request;
     private final TaskMatcher matcher;
 
-    Task(HttpClient httpClient, HttpRequestBase request, TaskMatcher matcher) {
+    NatasTask(HttpClient httpClient, HttpRequestBase request, TaskMatcher matcher) {
         this.httpClient = httpClient;
         this.request = request;
         this.matcher = matcher;
