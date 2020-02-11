@@ -1,6 +1,7 @@
 # Generated files
 
 .idea
-playground-java.iml
+natas.iml
 out
 target
+node_modules
