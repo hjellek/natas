@@ -1,0 +1,24 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "natas17": "babel-node src/main/javascript/natas17.js",
+    "natas18": "babel-node src/main/javascript/natas18.js",
+    "natas19": "babel-node src/main/javascript/natas19.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/node": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
+    "prettier": "^1.19.1",
+    "worker-farm": "^1.7.0"
+  }
+}
