@@ -1,4 +1,4 @@
-package net.leirahjelle.playground;
+package net.leirahjelle.natas;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

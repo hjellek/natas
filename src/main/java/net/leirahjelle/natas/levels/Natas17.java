@@ -1,5 +1,7 @@
-package net.leirahjelle.playground;
+package net.leirahjelle.natas.levels;
 
+import net.leirahjelle.natas.NatasLevel;
+import net.leirahjelle.natas.NatasTask;
 import org.apache.http.HttpResponse;
 import org.apache.http.auth.AuthScope;
 import org.apache.http.auth.UsernamePasswordCredentials;

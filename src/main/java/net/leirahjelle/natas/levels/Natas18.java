@@ -1,14 +1,17 @@
-package net.leirahjelle.playground;
+package net.leirahjelle.natas.levels;
 
-import org.apache.http.Header;
+import net.leirahjelle.natas.NatasLevel;
+import net.leirahjelle.natas.NatasTask;
 import org.apache.http.HttpResponse;
 import org.apache.http.auth.AuthScope;
 import org.apache.http.auth.UsernamePasswordCredentials;
 import org.apache.http.client.CredentialsProvider;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
-import org.apache.http.impl.client.*;
-import org.apache.http.impl.cookie.BasicClientCookie;
+import org.apache.http.impl.client.BasicCredentialsProvider;
+import org.apache.http.impl.client.BasicResponseHandler;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 
 import java.io.IOException;
 import java.util.LinkedList;
@@ -19,10 +22,6 @@ import java.util.regex.Pattern;
 import java.util.stream.IntStream;
 
 public class Natas18 extends NatasLevel {
-
-    public Natas18() {
-        super(4);
-    }
 
     public Natas18(int threads) {
         super(threads);

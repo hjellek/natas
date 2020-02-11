@@ -1,4 +1,4 @@
-package net.leirahjelle.playground;
+package net.leirahjelle.natas;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -13,7 +13,7 @@ public class NatasTask implements Callable<String> {
     private final HttpRequestBase request;
     private final TaskMatcher matcher;
 
-    NatasTask(HttpClient httpClient, HttpRequestBase request, TaskMatcher matcher) {
+    public NatasTask(HttpClient httpClient, HttpRequestBase request, TaskMatcher matcher) {
         this.httpClient = httpClient;
         this.request = request;
         this.matcher = matcher;

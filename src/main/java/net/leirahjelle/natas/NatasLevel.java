@@ -1,4 +1,4 @@
-package net.leirahjelle.playground;
+package net.leirahjelle.natas;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -6,7 +6,6 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.ThreadPoolExecutor;
-import java.util.stream.IntStream;
 
 abstract public class NatasLevel {
 
@@ -16,7 +15,7 @@ abstract public class NatasLevel {
         executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(threads);
     }
 
-    abstract String findPassword() throws InterruptedException, ExecutionException;
+    abstract public String findPassword() throws InterruptedException, ExecutionException;
 
     protected String fromCharCode(int... codePoints) {
         return new String(codePoints, 0, codePoints.length);

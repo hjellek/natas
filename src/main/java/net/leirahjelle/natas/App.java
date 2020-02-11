@@ -1,4 +1,6 @@
-package net.leirahjelle.playground;
+package net.leirahjelle.natas;
+
+import net.leirahjelle.natas.levels.Natas18;
 
 import java.time.Clock;
 import java.util.concurrent.ExecutionException;
